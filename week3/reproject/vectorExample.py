@@ -11,7 +11,7 @@ with pyproj
 
 # import necessary functions
 import numpy as np
-from pyproj import Proj, transform
+from pyproj import Transformer
 import argparse
 
 
@@ -47,10 +47,13 @@ def makeUpCoords(numb):
 
 def reprojectData(lon,lat,outEPSG):
   # set projections
-  inProj=Proj("epsg:4326")
-  outProj=Proj("epsg:"+str(outEPSG))
+
+  # define projections
+  reproject = Transformer.from_crs(4326,outEPSG,always_xy=True)
+
   # reproject data
-  x,y=transform(inProj, outProj,lat,lon)
+  x,y=reproject.transform(lon,lat)
+
   return(x,y)
 
 
