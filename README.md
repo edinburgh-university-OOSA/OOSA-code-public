@@ -38,6 +38,11 @@ Contains two scripts to demonstrate reading from a text file and writing to a te
 Contains a text file with some sample data to practice reading with the fileIO code.
 
 
+### sort
+
+Contains an example solution for a simple sort algorithm. Note that there are multiple sort solutions, such as bubble sort, and then many more complex and efficient algorithms.
+
+
 
 # Dependencies
 
