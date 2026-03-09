@@ -96,6 +96,25 @@ Contains some text data files for use in this week's exercises.
 Contains a piece of code demonstrating the suggested use of document string comments.
 
 
+### binary\_search
+
+Contains code to teach about increasing efficiency via the example of a binary search.
+
+    searchObject.py:            begins an object for sorting data
+    searchObject_withplot.py:   the above with an plotting function added
+    binarySearches.py:          contains suggested answers for binary search by loop and recursion
+    finishedQuartiles.py:       week 2 algorithm solution. uses the above to find quartiles in a sorted dataset
+
+
+The scripts below create the test data.
+
+    makeData.py:                makes data for testing algorithms
+    randomWages.py:             generates random wage data for testing algorithms
+
+
+
+
+
 
 
 # Dependencies

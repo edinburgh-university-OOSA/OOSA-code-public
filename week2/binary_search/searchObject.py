@@ -17,11 +17,10 @@ class dataSorter(object):
   def __init__(self,numb=100):
     '''Class initialiser'''
     self.numb=numb
-    self.arr=
+    self.arr=np.random.random((numb))
 
   def sortArray(self):
     '''Sort an array of data'''
-
-
+    self.sorted=np.sort(self.arr)
     return
 
