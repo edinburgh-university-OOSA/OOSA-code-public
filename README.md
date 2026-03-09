@@ -112,7 +112,48 @@ The scripts below create the test data.
     randomWages.py:             generates random wage data for testing algorithms
 
 
+## Week 3
 
+Week 3 covers
+
+***Aspects*** 
+* Geospatial packages: pyproj and gdal
+* A note on function input/output
+* Function fitting
+* A mention of pandas
+
+***Algorithm***
+* Douglas-Peucker line generalization
+
+
+### docu\_strings
+
+Contains examples of document strings.
+
+
+### reproject
+
+Shows an example of using the gdal package to reproject raster or vector data.
+
+
+### function\_fit
+
+Shows an example of fitting a function to data.
+
+
+### pointer\_reference
+
+Demonstrates the difference between variables that point to an array and copying a whole array.
+
+
+### pandas
+
+Shows an example of reading data into a pandas object.
+
+
+### line\_distance
+
+A function to find the orthogonal distance between a line and a point, to be used in the Douglas-Peucker line generalization algorithm.
 
 
 
