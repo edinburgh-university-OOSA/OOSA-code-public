@@ -161,6 +161,30 @@ Contains an example solution for the Douglas-Peucker line generalisation.
 
 
 
+## Week 4
+
+Week 4 covers
+
+***Aspects***
+* Geospatial data formats; HDF5
+
+
+### hdf
+
+This folder contains some starter code to handle HDF5 formatted data from the LVIS lidar.
+
+    lvisClass.py -   The base class to read LVIS data into RAM
+    lvisExample.py - An example of using lvisClass.py
+    processLVIS.py - Inherits from lvisClass.py and adds methods to extract ground elevation
+
+Takes the following input parameters
+
+    --input INNAME     LVIS input filename
+    --outRoot OUTROOT  Output filename root to use with graphs and DEMs produced.
+
+
+
+
 # Dependencies
 
 The code in these repositories make use of the following packages and is all in python3:
