@@ -155,6 +155,9 @@ Shows an example of reading data into a pandas object.
 
 A function to find the orthogonal distance between a line and a point, to be used in the Douglas-Peucker line generalization algorithm.
 
+### dp-line-general
+    
+Contains an example solution for the Douglas-Peucker line generalisation.
 
 
 
