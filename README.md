@@ -183,6 +183,12 @@ Takes the following input parameters
     --outRoot OUTROOT  Output filename root to use with graphs and DEMs produced.
 
 
+### geotiff
+
+This contains a script with a function to take an array of vector data (x,y,z) and produces a raster of the z values at a given resolution:
+
+    tiffExample.py
+
 
 
 # Dependencies
