@@ -176,6 +176,7 @@ This folder contains some starter code to handle HDF5 formatted data from the LV
     lvisClass.py -   The base class to read LVIS data into RAM
     lvisExample.py - An example of using lvisClass.py
     processLVIS.py - Inherits from lvisClass.py and adds methods to extract ground elevation
+    lvisCompleteExample.py - example solutions for the week 4 tasks
 
 Takes the following input parameters
 
@@ -190,6 +191,71 @@ This contains a script with a function to take an array of vector data (x,y,z) a
     tiffExample.py
 
 
+## Week 5
+
+Week 5 covers
+    
+***Aspects***
+* More geospatial packages: Geopandas
+* RAM management
+* A brief introduction to machine learning
+
+***Algorithm***
+* Machine learning; getting data into the machine
+
+
+### geopandas
+    
+This folder contains an example of using geopandas to read a csv file containing geographic data, sorting and reprojecting it. Note that it makes use of the **shapely** package to define the geometry type within the geopandas array. Here **Point** is used as this is vector data. This stacking of packages can be difficult to follow, but the answers can be found on the documentation and stackoverflow. The latter is sometimes more helpful for specific tasks, as the official documentation shows all possible uses.
+    
+   week5/geopandas/geopandasExample.py
+    
+This script has the following command line options:
+
+    --inEpsg INEPSG    Input EPSG code
+    --outEpsg OUTEPSG  Output EPSG code
+    --input INNAME     Input filename
+    --output OUTNAME   Output filename
+
+
+### RAM management
+
+To illstrate RAM management, a stack of rasters will be processed. You can use the *readTiff.py* script from week 4 as starter code. This uses GDAL to read in a raster file, has a space to perform some data manipulation, and writes out the result.
+
+
+
+### Function fitting
+
+This section gives examples for linear and polynomial fitting, to illustrate the components that go into machine learning. The code includes
+
+    linearFit.py           # linear fitting example
+    linearFit_answer.py    # linear fitting wth task answers
+    polyFit.py             # polynomial fitting example
+    polyFit_answer.py      # polynomial fitting with task answers
+    aic_answer.py          # polynomial fitting with AIC task answers
+
+
+### Machine learning
+
+A simple example is available in
+
+    week5/random_forest/randomForest_example.py
+
+It has the following options:
+
+    --input NAMEN         Input data table
+    --trainFrac TRAINFRAC Fraction of data to use for training
+    --nTrees N_ESTIMATORS Number of trees
+    --max_depth MAX_DEPTH Maximum branch depth
+
+
+A more complex example is available that brings together all parts of the course. Note that this is not working as yet due to a bug in the data reading. This code is taken from Euan Mitchell's [dissertation repository](https://github.com/euanmitchell/dissertation)
+
+    week5/random_forest/randomForestLaSelva.py
+
+
+
+
 
 # Dependencies
 
@@ -202,6 +268,7 @@ The code in these repositories make use of the following packages and is all in 
     gdal
     rasterio
     argparse
+    sklearn
 
 
 # Author
